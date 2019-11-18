@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <title>Test technique réalisé par Théo HAMDAN</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="data_inea.js" async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+        <style>
+            body {
+              background-image: url('image/inea.png');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            .container{overflow: hidden}
+            .tab{float: left;}
+            .tab-2{margin-left: 100px}
+            .tab-2 input{display: block;margin-bottom: 10px}
+            tr{transition:all .25s ease-in-out}
+            tr:hover{background-color:#EEE;cursor: pointer}
+        </style>
+    </head>
+    <body>
+      <img src="image/ineaconseil.png" alt="Smiley face" height="120" width="120">
+        
+        <font size="+3">Les informations des utilisateurs :</font>
+        <br></br>
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="2">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Profession</th>
+                        <th>Age</th>
+                        <th>N° de téléphone</th>
+                        <th>Email</th>
+                      </tr>
+       
+                </table>
+            </div>
+            <div class="tab tab-2">
+              ID :<input type="number" name="id" id="id">
+              Nom :<input type="text" name="nom" id="nom">
+              Prénom :<input type="text" name="prenom" id="prenom">
+              Profession :<input type="text" name="profession" id="profession">
+              Age :<input type="number" name="age" id="age">
+              N° de téléphone :<input type="number" name="telephone" id="telephone">
+              Email :<input type="text" name="email" id="email">
+                <button onclick="Ajout_TableRow();">Ajouter</button>
+                <button onclick="modifier_donnee();">Modifier</button>
+                <button onclick="suppression_donnee();">Supprimer</button>
+            </div>
+        </div>
+    </body>
+</html>
